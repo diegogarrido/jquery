@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="javascript.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="click" class="section">
+                <h1>Click</h1>
+                <button onclick="alert('Boton presionado')">Click()</button>
+            </div>
+            <hr>
+            <div id="hide" class="section">
+                <h1>Hide</h1>
+                <button onclick="$('#hide').hide()">Hide()</button>
+            </div>
+            <hr>
+            <div id="show" class="section">
+                <h1 hidden>Show</h1>
+                <button onclick="$('#show h1').show()">Show()</button>
+            </div>
+            <hr>
+            <div id="toggle" class="section">
+                <h1>Toggle</h1>
+                <button onclick="$('#toggle h1').toggle()">Toggle()</button>
+            </div>
+            <hr>
+            <div id="slideDown" class="section">
+                <h1 hidden>SlideDown</h1>
+                <button onclick="$('#slideDown h1').slideDown()">SlideDown()</button>
+            </div>
+            <hr>
+            <div id="slideUp" class="section">
+                <h1>SlideUp</h1>
+                <button onclick="$('#slideUp').slideUp()">SlideUp()</button>
+            </div>
+            <hr>
+            <div id="slideToggle" class="section">
+                <h1>SlideToggle</h1>
+                <button onclick="$('#slideToggle h1').slideToggle()">SlideToggle()</button>
+            </div>
+            <hr>
+            <div id="fadeIn" class="section">
+                <h1 hidden>FadeIn</h1>
+                <button onclick="$('#fadeIn h1').fadeIn()">FadeIn()</button>
+            </div>
+            <hr>
+            <div id="fadeOut" class="section">
+                <h1>FadeOut</h1>
+                <button onclick="$('#fadeOut').fadeOut()">FadeOut()</button>
+            </div>
+            <hr>
+            <div id="addClass" class="section">
+                <h1>AddClass</h1>
+                <button onclick="$('#addClass').addClass('red')">AddClass()</button>
+            </div>
+            <hr>
+            <div id="before" class="section">
+                <h1>Before</h1>
+                <button onclick="$('#before').before('<p style='+'text-align:center;'+'>Hola mundo</p>')">Before()</button>
+            </div>
+            <hr>
+            <div id="after" class="section">
+                <h1>After</h1>
+                <button onclick="$('#after').after('<p style='+'text-align:center;'+'>Hola mundo</p>')">After()</button>
+            </div>
+            <hr>
+            <div id="append" class="section">
+                <h1>Append</h1>
+                <button onclick="$('#append').append('<p style='+'text-align:center;'+'>Hola mundo</p>')">Append()</button>
+            </div>
+            <hr>
+            <div id="html" class="section">
+                <h1>Html</h1>
+                <button onclick="$('#html').html('<p style='+'text-align:center;'+'>Hola mundo</p>')">Html()</button>
+            </div>
+            <hr>
+            <div id="attr" class="section">
+                <h1>Attr</h1>
+                <button onclick="$('#attr').append('<p style='+'text-align:center;>clase='+$('#attr').attr('class')+'</p>')">Attr()</button>
+            </div>
+            <hr>
+            <div id="val" class="section">
+                <h1>Val</h1>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <button onclick="$('#val').append('<p style='+'text-align:center;>seleccionado='+$('#val select').val()+'</p>')">Val()</button>
+            </div>
+            <hr>
+            <div id="text" class="section">
+                <h1>Text</h1>
+                <button onclick="$('#text h1').text('Texto cambiado')">Text()</button>
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
